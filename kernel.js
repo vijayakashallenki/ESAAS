@@ -20,7 +20,7 @@ const emailrouter = require("./routes/emailRoutes/emailRoutes");
 
 // app.use((req, res, next) => {
 //   console.log("before", req);
-//   next();
+//   next();test
 // });
 
 app.use(express.json());
