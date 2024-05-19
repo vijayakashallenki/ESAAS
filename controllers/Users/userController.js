@@ -215,7 +215,7 @@ const userPasswordReset = asyncHandler(async (req, res) => {
 
     //sending a token to the email
 
-    const resetURL = `http://localhost:3000/forgot-passsword-reset/${resetPasswordToken}`;
+    const resetURL = `https://lazyshoppers.netlify.app/forgot-passsword-reset/${resetPasswordToken}`;
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -304,7 +304,7 @@ const verifyAccount = asyncHandler(async (req, res) => {
 
     await user.save();
 
-    const verfiyURL = `http://localhost:3000/forgot-passsword-reset/${verificationToken}`;
+    const verfiyURL = `https://lazyshoppers.netlify.app/forgot-passsword-reset/${verificationToken}`;
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
